@@ -1,0 +1,204 @@
+@import 'utilities.css';
+
+:root{
+    --primary: #3DCFD3;
+    --dark: #161616;
+    --ternary: #898989;
+    --pure: #ffffff;
+    --light: #dbd7d7;
+    --secondary: #070606; 
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smotthing: antialiased;
+}
+/* Header part start here */
+
+header{
+    background-color: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 90%, 0 100%);
+    height: 43.75rem;
+    
+}
+
+body{
+    font-family: sans-serif;
+
+}
+
+.container{
+    max-width: 100%;
+    padding: 0 8%;
+    margin: 0 auto;
+}
+
+header nav .left a{
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition:all .3s ease;
+    font-size: 1rem;
+
+}
+header nav .left a:hover{
+    color: var(--primary);
+    
+}
+
+header nav {
+    padding: 2rem 0;
+}
+header nav .branding{
+    margin-right: 3rem
+}
+.hero .right{
+    color: var(--pure);
+    padding-top: 3rem;
+    
+}
+.hero .right h6 {
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+.hero .right h1{
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+}
+.hero .right h1 span{
+    color: var(--primary);
+    font-size: 4rem;
+}
+.hero .right p{
+    line-height: 1.9;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+section{
+    padding: 6rem 0;
+}
+section .about .about-me-image{
+    height: 50%;
+}
+section .flex1 h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+section .flex1 h1 span {
+    color: var(--primary);
+}
+section .flex1 h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+section .flex1 p{
+    font-family: sans-serif;
+    color: var(--ternary);
+    line-height: 1.9;
+    text-align: justify;
+}
+section .flex1 hr{
+    width: 20%;
+    margin-top: 1rem;
+    height: .2rem;
+    background-color: var(--primary);
+}
+.social{
+    display: flex;
+}
+.social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem .5rem;
+}
+.social a img {
+    width: 100%;
+    height: 100%;
+    
+    border-radius: 50%;
+
+}
+.social a img:hover{
+    border: none;
+    
+    transition: all .3s ease;
+    width: 3rem;
+    height: 3rem;
+}
+
+.section-heading{
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+.section-heading+p{
+    color: var(--ternary);
+    font-family: sans-serif;
+    margin-bottom: 6rem;
+    text-align: center;
+    
+}
+.section-heading span{
+    color: var(--primary);
+}
+
+section.services .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 3rem;
+}
+
+section.services{
+    background: var(--light);
+}
+section.services .card-wrapper .single-card{
+    background: var(--pure);
+    padding: 2rem 2rem;
+    position: relative;
+    padding-top: 3rem;
+    text-align: center;
+    margin: 0 1.5rem;
+    transition: all .3s ease;
+
+}
+section.services .card-wrapper .single-card img{
+    background: var(--primary);
+    position: absolute;
+    top: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    
+
+
+}
+section.services .card-wrapper .single-card h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+
+}
+section.services .card-wrapper .single-card p {
+    font-family: sans-serif;
+    color: var(--ternary);
+    line-height: 1.6;
+}
+section.services .card-wrapper .single-card:hover{
+    background: var(--dark);
+    
+}
+section.services .card-wrapper .single-card:hover h2{
+    color: var(--pure);
+
+}

@@ -1,0 +1,11 @@
+.welcome{
+    background: url(media/background-3881393_1920.jpg);
+    margin-top: 10%;
+    padding: 5%;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.welcome p {
+    color: whitesmoke;
+}
