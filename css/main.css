@@ -2,7 +2,8 @@
 
 :root{
     --primary: #3DCFD3;
-    --dark: #161616;
+    --dark: #140141;
+    --dark-light: #dc04f8;
     --ternary: #898989;
     --pure: #ffffff;
     --light: #dbd7d7;
@@ -17,7 +18,7 @@
 /* Header part start here */
 
 header{
-    background-color: var(--dark);
+    background: linear-gradient(var(--dark), var(--dark-light));
     clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 90%, 0 100%);
     height: 43.75rem;
     
@@ -200,7 +201,7 @@ section.services .card-wrapper .single-card p {
     line-height: 1.6;
 }
 section.services .card-wrapper .single-card:hover{
-    background: var(--dark);
+    background: linear-gradient(var(--dark-light), var(--dark));
     
 }
 section.services .card-wrapper .single-card:hover h2{
