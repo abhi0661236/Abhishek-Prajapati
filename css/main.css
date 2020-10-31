@@ -83,8 +83,12 @@ header nav .branding{
 section{
     padding: 6rem 0;
 }
+section.about .container{
+    width: 100%;
+}
 section .about .about-me-image{
-    height: 50%;
+    width: 100px;
+    height: 100px;
 }
 section .flex1 h1{
     margin-bottom: 1rem;
