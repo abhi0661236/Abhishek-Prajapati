@@ -211,6 +211,7 @@ section.services .card-wrapper .single-card:hover h2{
 
 footer {
     background-color: var(--dark);
+    clip-path: polygon();
 }
 footer p{
     padding: 2rem;
