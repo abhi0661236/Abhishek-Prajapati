@@ -232,10 +232,25 @@ section.services .card-wrapper .single-card:hover h2{
 
 }
 
+/* footer is designed here */
+
+
 footer {
     background-color: var(--dark);
-    clip-path: polygon();
 }
 footer p{
     padding: 2rem;
+    color: white;
+    font-style: italic;
+    text-align: center;
+}
+
+footer p a{
+    color: white;
+    text-decoration: none;
+}
+
+footer p a:hover{
+    color: var(--primary);
+    cursor: pointer;
 }
