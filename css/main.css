@@ -25,6 +25,10 @@ body{
 }
 
 
+
+
+
+
 /* Header part starts here */
 
 header{
@@ -33,12 +37,36 @@ header{
     top: 0;
     z-index: 10;
 }
+/* for large and medium size phones */
+@media only screen and (max-width: 425spx){
+    header{
+        position: sticky;
+        top: 0;
+        width: 100%;
+    }
+}
 
 .container{
-    max-width: 100%;
+    width: 100%;
     padding: 0 5%;
     
 }
+
+@media only screen and (max-width: 1024px){
+    .container{
+        width: 100%;
+        padding: 0 2%;
+    }
+}
+
+/* for large and medium size phones */
+@media only screen and (max-width: 425px){
+    .container{
+        width: 100%;
+        padding: 0 5px;
+    }
+}
+
 
 header nav .left a{
     color: var(--pure);
@@ -49,6 +77,34 @@ header nav .left a{
     font-size: 1rem;
 
 }
+
+
+/* navigation in iPad */
+
+@media only screen and (max-width: 768px){
+    header nav .left a{
+        display: none;
+    }
+}
+
+header nav .right a{
+    display: none;
+}
+
+/* for large and medium size phones */
+
+@media only screen and (max-width: 425px){
+    header nav .right button{
+        display: none;
+    }
+    header nav .right a{
+        display: flex;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+
 header nav .left a:hover{
     color: var(--primary);
     
@@ -63,6 +119,16 @@ header nav .branding{
 }
 
 
+
+
+
+
+
+
+
+
+
+
 /* hero section is starting here */
 
 
@@ -73,6 +139,46 @@ header nav .branding{
     
 }
 
+/* for large and medium size phones */
+
+@media only screen and (max-width: 425px){
+    #polygon{
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 85%, 0% 100%);
+    }
+}
+
+/* for large and medium size phones */
+
+@media only screen and (max-width: 425px){
+    .hero{
+        display: block;
+    }
+}
+
+.hero .left img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* image style for iPad */
+
+@media only screen and (max-width: 768px){
+    .hero .left img{
+        width: 80%;
+        height: auto;
+    }
+}
+
+/* for large and medium size phones */
+
+@media only screen and (max-width: 425px){
+    .hero .left img{
+        width: 150px;
+        border: 2px solid white;
+        border-radius: 50%;
+    }
+}
 
 .hero .right{
     color: var(--pure);
@@ -84,22 +190,95 @@ header nav .branding{
     color: var(--primary);
     margin-bottom: 0.5rem;
 }
+
+/* for large and medium size phones */
+
+@media only screen and (max-width: 425px){
+    .hero .right h6{
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+
 .hero .right h1{
     font-size: 3rem;
     font-weight: 100;
     line-height: 1;
     margin-bottom: 1.5rem;
 }
+
+/* for large and medium size phones */
+
+@media only screen and (max-width: 425px){
+    .hero .right h1{
+        display: none;
+    }
+}
+
+/* h1 text for iPad  */
+
+@media only screen and (max-width: 768px){
+    .hero .right h1{
+        font-size: 2rem;
+    }
+}
+
+
 .hero .right h1 span{
     color: var(--primary);
     font-size: 4rem;
 }
+
+
+/* span text for iPad */
+
+@media only screen and (max-width: 768px){
+    .hero .right h1 span{
+        font-size: 3rem;
+        font-weight: bold;
+    }
+}
+
 .hero .right p{
     line-height: 1.9;
     margin-bottom: 2rem;
     padding: 0 4.6rem 0 0;
     text-align: justify;
 }
+
+/* for large and medium size phones */
+
+@media only screen and (max-width: 425px){
+    #para{
+        padding: 0 20px;
+    }
+    #resume{
+        width: fit-content;
+        margin: 0 auto;
+    }
+}
+
+/* paragraph styles for iPad */
+
+@media only screen and (max-width: 768px){
+    .hero .right p{
+        padding-right: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -111,14 +290,47 @@ section{
 section.about .container{
     width: 100%;
 }
-section .about .about-me-image{
-    max-width: 100%;
+/* for large and medium size phones */
+
+@media only screen and (max-width: 425px){
+    section.about .container{
+        display: block;
+    }
+}
+
+.about .container .up .about-me-image{
+    width: 100%;
     height: auto;
 }
+/* for large and medium size phones */
+
+@media only screen and (max-width: 425px){
+    
+    #img-about{
+        margin-left: 10%;
+        
+    }
+}
+/* image for iPad */
+@media only screen and (max-width: 768px){
+    .about .container .up .about-me-image{
+        width: 80%;
+        height: auto;
+    }
+}
+
+
 section .flex1 h1{
     margin-bottom: 1rem;
     font-size: 1.6rem;
     font-weight: 400;
+}
+/* for large and medium size phones */
+
+@media only screen and (max-width: 425px){
+    section .flex1 h1{
+        text-align: center;
+    }
 }
 section .flex1 h1 span {
     color: var(--primary);
@@ -127,20 +339,66 @@ section .flex1 h3{
     font-size: 1rem;
     margin-bottom: 1rem;
 }
+/* for large and medium size phones */
+
+@media only screen and (max-width: 425px){
+    section .flex1 h3{
+        text-align: center;
+    }
+}
 section .flex1 p{
     font-family: sans-serif;
     color: var(--ternary);
     line-height: 1.9;
     text-align: justify;
 }
+/* for large and medium size phones */
+
+@media only screen and (max-width: 425px){
+    section .flex1 p{
+        text-align: justify;
+        padding: 0 10px;
+    }
+}
+/* for iPad pro */
+@media only screen and (max-width: 1024px){
+    section .flex1 p{
+        padding-right: 3rem;
+    }
+}
+
+/* for iPad */
+@media only screen and (max-width: 768px){
+    section .flex1 p{
+        padding-right: 1rem;
+    }
+}
+
 section .flex1 hr{
     width: 20%;
     margin-top: 1rem;
     height: .2rem;
     background-color: var(--primary);
 }
+/* for large and medium size phones */
+
+@media only screen and (max-width: 425px){
+    section .flex1 hr{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 .social{
     display: flex;
+}
+/* for large and medium size phones */
+
+@media only screen and (max-width: 425px){
+    .social{
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 .social a {
     display: flex;
@@ -163,6 +421,18 @@ section .flex1 hr{
     transition: all .3s ease;
     transform: scale(1.5);
 }
+
+
+
+
+
+
+
+
+
+/* services grid starts here */
+
+
 
 .section-heading{
     color: var(--secondary);
@@ -187,12 +457,29 @@ section.services .card-wrapper {
     grid-row-gap: 3rem;
 }
 
+/* columns for iPad */
+@media only screen and (max-width: 768px){
+    section.services .card-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+/* for large and medium size phones */
+
+@media only screen and (max-width: 425px){
+    section.services .card-wrapper{
+        grid-template-columns: 1fr;
+    }
+
+}
+
 section.services{
     background: var(--light);
 }
 section.services .card-wrapper .single-card{
     background: var(--pure);
     padding: 2rem 2rem;
+    height: 15rem;
     position: relative;
     padding-top: 3rem;
     text-align: center;
@@ -200,6 +487,9 @@ section.services .card-wrapper .single-card{
     transition: all .3s ease;
     box-shadow:.2rem .2rem 1rem var(--dark);
 
+}
+section.services .card-wrapper .single-card button{
+    margin-bottom: 5rem;
 }
 section.services .card-wrapper .single-card img{
     background: var(--primary);
@@ -224,7 +514,7 @@ section.services .card-wrapper .single-card p {
     line-height: 1.6;
 }
 section.services .card-wrapper .single-card:hover{
-    background: var(--dark);
+    background: linear-gradient(90deg, rgb(13, 0, 88), rgb(32, 1, 32));
     
 }
 section.services .card-wrapper .single-card:hover h2{
@@ -232,11 +522,73 @@ section.services .card-wrapper .single-card:hover h2{
 
 }
 
+
+
+
+/* work section is here */
+
+.work{
+    background-color: rgb(240, 238, 238);
+}
+/* for laptops and iPad pro */
+@media only screen and (max-width: 1024px){
+    .work{
+        line-height: 30px;
+    }
+}
+/* for large and medium size phones */
+
+@media only screen and (max-width: 425px){
+    .work{
+        line-height: 25px;
+    }
+}
+.work .container .left h2 span{
+    color: var(--primary);
+}
+/* for large and medium size phones */
+
+@media only screen and (max-width: 425px){
+    .work .container .right{
+        display: none;
+    }
+}
+.work .container .left p{
+    text-align: justify;
+}
+.work .container .left{
+    padding-left: 2.5rem;
+}
+/* for large and medium size phones */
+
+@media only screen and (max-width: 425px){
+    .work .container .left{
+        padding: 0 10px;
+    }
+}
+/* for iPad */
+@media only screen and (max-width: 768px){
+    .work .container .left{
+        padding-left: 1rem;
+    }
+}
+
+/* right image for iPad */
+@media only screen and (max-width: 768px){
+    .work .container .right img{
+        width: 300px;
+        height: auto;
+    }
+}
+
+
+
 /* footer is designed here */
 
 
 footer {
-    background-color: var(--dark);
+    background: linear-gradient(90deg, rgb(13, 0, 88), rgb(32, 1, 32));
+
 }
 footer p{
     padding: 2rem;
