@@ -132,10 +132,10 @@ header nav .branding{
 /* hero section is starting here */
 
 
-#polygon{
+#welcome-section{
     background: linear-gradient(90deg, rgb(13, 0, 88), rgb(32, 1, 32));
     clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 90%, 0 100%);
-    height: 35.75rem;
+    height: 100vh;
     
 }
 
