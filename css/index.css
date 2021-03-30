@@ -9,3 +9,30 @@
 .welcome p {
     color: whitesmoke;
 }
+/* css rules for project section  */
+#projects{
+    width: 84%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+.project-tile{
+    background-color: rgb(233, 231, 231);
+    box-shadow: 5px 5px 15px black;
+    padding: .5rem;
+}
+.project-tile p{
+    color: rgb(54, 56, 56)85, 90, 90);
+    text-align: justify;
+    margin: 2px 0px;
+}
+.project-tile img{
+    width: 100%;
+}
+.project-tile a{
+    text-decoration: none;
+    
+    text-align: center;
+}
