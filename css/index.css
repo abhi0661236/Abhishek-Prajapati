@@ -36,12 +36,26 @@
     
     text-align: center;
 }
+.outer{
+    width: 75%;
+    margin: 0px auto 5rem auto;
 
+}
 .cardProject{
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .cardProject img{
-    width: 50%;
+    width: 40%;
+    border: 2px solid black;
+}
+
+.cardProject .con{
+    width: 500px;
+}
+
+.cardProject .con p{
+    text-align: justify;
 }
