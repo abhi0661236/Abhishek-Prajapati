@@ -1,0 +1,9 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body,h1,h2,h3,h4,h5,h6,p,b,i,u,main,article,section,footer,header,div,table,tr,td,th,tbody,thead,caption,img,ul,ol,li,a{
+    margin: 0px;
+    padding: 0px;
+}

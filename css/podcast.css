@@ -1,3 +1,28 @@
-.podcast-link{
-    
+#welcome{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0px auto;
+    justify-content: space-between;
+}
+#welcome .intro{
+    width: 45%;
+}
+#welcome .cover{
+    width: 45%;
+}
+#welcome .cover img{
+    max-width: 100%;
+    height: auto;
+    border: 2px solid rgba(67, 67, 241, 0.719);
+    border-radius: 50%;
+}
+
+#detail{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#detail h2{
+    text-align: center;
 }
