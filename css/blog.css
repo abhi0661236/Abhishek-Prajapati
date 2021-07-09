@@ -1,0 +1,28 @@
+main{
+    width: 100%;
+    /* height: 37rem; */
+    padding: 0 13%;
+    background: linear-gradient(90deg, rgb(13, 0, 88), rgb(32, 1, 32));
+    display: flex;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    
+
+}
+#blogs{
+    width: 15%;
+    background-color: whitesmoke;
+}
+
+#detail{
+    width: 70%;
+    color: white;
+}
+
+#category{
+    width: 15%;
+    background-color: transparent;
+    border: 2px solid #3DCFD3;
+    box-shadow: 3px 3px 3px 2px #3DCFD3;
+}
+
